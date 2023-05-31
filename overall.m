@@ -28,7 +28,8 @@ plot_inf = ["synth no f","--";
 data_run = 4;           %Changable var
 x_vm = 0:0.01:0.5;      %Changable var
 x_angle = 0:1:5;        %Changable var
-
+%changable var --> change with x_angle
+lines = ["0 deg","1 deg","2 deg","3 deg","4 deg", "5 deg"];
 
 [E_comp,vm] = stress_strain_test(data(data_run,1),double(data(data_run,3)),double(data(data_run,4)),double(data(data_run,5)));
 
@@ -47,7 +48,7 @@ end
 title('Effective Modulus with varying angle & fiber content');
 xlabel('fiber content, Vf [mg/mg]');
 ylabel('Effective modulus [MPa]');
-legend(plot_inf(data_run,1));
+legend(lines);
 saveas(gcf,'Effective Modulus with varying angle & fiber content.png');
 
 
