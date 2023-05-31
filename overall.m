@@ -1,4 +1,4 @@
-% [v_f,m_f] = biochemical_essay(0.4,10.73);%solvent in ml, sample_mass in mg(, tissue_vol in ml)
+[v_f,m_f] = biochemical_essay(0.4,10.73);%solvent in ml, sample_mass in mg(, tissue_vol in ml)
 
 %   [1]         [2]             [3]     [4]        [5]
 %file_name, angle (degrees), width_0 (mm), width_1(mm), thickness
