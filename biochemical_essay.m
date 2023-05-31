@@ -4,8 +4,8 @@ function [v_f,m_f] = biochemical_essay(solvent,sample_mass,tissue_vol)%solvent i
     tiss_vol = sample_mass /tiss_D; %ml
 
 
-    bio_std = table2array(readtable('Hyp Group 12.xlsx','Range','C25:D31'));
-    tiss_mass = table2array(readtable('Hyp Group 12.xlsx','Range','G25:H27'));
+    bio_std = table2array(readtable('data/Hyp Group 12.xlsx','Range','C25:D31'));
+    tiss_mass = table2array(readtable('data/Hyp Group 12.xlsx','Range','G25:H27'));
     bio_std_mean = mean(bio_std,2);
     tiss_mass_mean = mean(tiss_mass,2);
     conc = [0,12.5,25,50,100,200,400];
